@@ -14,7 +14,7 @@ public class Job implements Runnable {
     } catch (InterruptedException e) {
       // no catching as example should not experience interruptions
     }
-    System.out.println("Job: " + jobNumber + " is ending in thread : "
-      Thread.currentThread.getName());
+    System.out.println("Job: " + jobNumber + " is ending in thread : " +
+      Thread.currentThread().getName());
   }
 }
